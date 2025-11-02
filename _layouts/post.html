@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="post-content">
+    <h1>{{ page.title }}</h1>
+    <p><small>发布日期: {{ page.date | date: "%Y年%m月%d日" }}</small></p>
+    
+    <div class="post-body">
+        {{ content }}
+    </div>
+</article>
