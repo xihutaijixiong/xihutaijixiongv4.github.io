@@ -5,7 +5,7 @@ baseurl: "" # 如果仓库名是 用户名.github.io 就留空
 url: "https://你的用户名.github.io" # 替换为你的用户名
 
 # 主题设置
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
