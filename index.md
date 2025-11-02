@@ -227,7 +227,7 @@ title: 首页
                     {% for post in site.posts %}
                     <li class="post-item">
                         <h3 class="post-title">
-                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                         </h3>
                         <div class="post-date">
                             {{ post.date | date: "%Y年%m月%d日" }}
