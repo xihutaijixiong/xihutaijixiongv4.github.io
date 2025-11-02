@@ -1,61 +1,31 @@
-# 网站基础信息
-title: "我的个人知识库"
-description: "数据分析 | 知识管理 | 英语学习 | 旅游记录"
+# 站点设置
+title: "我的个人网站"
+description: "这是我的个人网站和博客"
 baseurl: "" 
 url: "https://xihutaijixiongv4.github.io"  # 替换为你的实际用户名
+github_username: xihutaijixiong
 
 # 构建设置
 markdown: kramdown
-permalink: pretty
-timezone: Asia/Shanghai
-
-# 主题设置
-theme: jekyll-theme-cayman
+permalink: /blog/:year/:month/:day/:title/
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-feed
+
+# 构建输出
+destination: _site
 
 # 作者信息
 author:
   name: "你的名字"
-  email: "你的邮箱@example.com"
-  github: "你的GitHub用户名"
-
-# 默认页面配置
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-      show_toc: true
-      
-  - scope:
-      path: "数据分析"
-    values:
-      category: "数据分析"
-      nav_order: 1
-      
-  - scope:
-      path: "知识管理" 
-    values:
-      category: "知识管理"
-      nav_order: 2
-      
-  - scope:
-      path: "英语学习"
-    values:
-      category: "英语学习"
-      nav_order: 3
-      
-  - scope:
-      path: "旅游记录"
-    values:
-      category: "旅游记录"
-      nav_order: 4
+  email: "your.email@example.com"
 
 # 排除文件
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor/
+
+# 包含文件
+include:
+  - .htaccess
