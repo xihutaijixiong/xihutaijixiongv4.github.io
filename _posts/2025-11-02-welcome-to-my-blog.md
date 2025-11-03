@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "欢迎来到我的博客"
 date: 2025-11-02
 categories: [随笔]
