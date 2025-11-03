@@ -14,3 +14,5 @@ title: 首页
     </li>
     {% endfor %}
 </ul>
+
+<a href="{{ site.baseurl }}/articles/python-basics.html">Python数据分析入门</a>
