@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <title>
-        {% if page.title %}
-            {{ page.title }} - {{ site.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            max-width: 800px; 
-            margin: 40px auto; 
-            padding: 20px;
-            line-height: 1.6;
-        }
-        header { border-bottom: 1px solid #eee; margin-bottom: 30px; }
-        .post-content { margin: 30px 0; }
-        .back-link { display: inline-block; margin-top: 30px; color: #007acc; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1><a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">{{ site.title }}</a></h1>
+        <nav>
+            <a href="/">首页</a>
+        </nav>
     </header>
     
     <main>
-        {{ content }}
+        <article>
+            {{ content }}
+        </article>
     </main>
     
     <footer>
-        <a href="{{ '/' | relative_url }}" class="back-link">← 返回首页</a>
+        <p>&copy; 2025 西湖太极熊的个人知识库</p>
     </footer>
 </body>
 </html>
