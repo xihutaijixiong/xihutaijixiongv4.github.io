@@ -27,5 +27,8 @@ exclude:
   - vendor/
 
 # 包含文件
-include:
-  - .htaccess
+include: ['_pages', 'articles']
+collections:
+  articles:
+    output: true
+    permalink: /articles/:path.html
