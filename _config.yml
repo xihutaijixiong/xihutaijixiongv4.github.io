@@ -1,34 +1,21 @@
-# 站点设置
-title: "我的个人网站"
-description: "这是我的个人网站和博客"
-baseurl: "" 
-url: "https://xihutaijixiongv4.github.io"  # 替换为你的实际用户名
-github_username: xihutaijixiong
+# 基础配置
+title: "西湖太极熊的个人网站"
+description: "欢迎访问西湖太极熊的个人网站"
+baseurl: "" # 如果仓库在子目录才需要填写
+url: "https://xihutaijixiongv4.github.io" # 替换为你的实际地址
 
-# 构建设置
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
-plugins:
-  - jekyll-feed
-
-# 构建输出
-destination: _site
+# 主题配置（使用默认主题）
+theme: minima
 
 # 作者信息
 author:
-  name: "你的名字"
-  email: "your.email@example.com"
+  name: "西湖太极熊"
+  email: "你的邮箱@example.com"
 
-# 排除文件
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/
+# 构建设置
+markdown: kramdown
+permalink: /:year/:month/:day/:title.html
 
-# 包含文件
-include: ['_pages', 'articles']
-collections:
-  articles:
-    output: true
-    permalink: /articles/:path.html
+# 插件
+plugins:
+  - jekyll-feed
